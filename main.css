@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "Tenor Sans";
+  src: url("TenorSans.woff2") format("woff2"),
+    url("TenorSans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Commons Classic Var Roman";
+  src: url("TTCommonsClsVarRoman.woff2") format("woff2"),
+    url("TTCommonsClsVarRoman.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #004874;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner {
+  position: relative;
+  height: 250px;
+  background: #004874;
+  overflow: hidden;
+  color: #ffffff;
+  width: 100%;
+  max-width: 940px;
+  min-width: 288px;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.photo {
+  width: 1000px;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;     
+  object-position: 0% 100%;
+}
+
+.logo {
+  margin-bottom: 43px;
+}
+
+.title {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 39px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+
+.btn {
+  font-family: "Tenor Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 39px;
+  color: #004874;
+  border: 0.3px solid #004874;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 5px 14px;
+}
+
+.secondLogo-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 38px;
+}
+
+.secondLogo-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: -77px;
+  width: 241px;
+  height: 1px;
+  background: #ffffff;
+}
+
+.disclaimer {
+  font-family: "TT Commons Classic Var Roman";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.slide-2 {
+  z-index: 3;
+}
+
+.slide-1 {
+  z-index: 1;
+}
+
+.slide-3 {
+  z-index: 2;
+}
+
+.photo-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+
+  background: linear-gradient(
+    90deg,
+    #004874 0%,
+    rgba(0, 72, 116, 0) 15%,
+    rgba(0, 72, 116, 0) 85%,
+    #004874 100%
+  );
+}
+
+.logo--final {
+  margin-bottom: 63px;
+}
+
+#click_area {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 390px) {
+  .logo {
+    height: clamp(40px, -2.083px + 14.286vw, 50px);
+  }
+
+  .title {
+    font-size: clamp(1.438rem, -0.327rem + 9.804vw, 2.063rem);
+  }
+
+  .btn {
+    font-size: clamp(1.438rem, -0.327rem + 9.804vw, 2.063rem);
+  }
+}

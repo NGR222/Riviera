@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="ad.size" content="width=100%,height=250" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <a id="click_area" href="#" target="_blank">
+      <section class="banner">
+      
+        <div class="slide slide-1">
+          <img class="logo logo--main" src="logo.svg" alt="" />
+          <h1 class="title">8 этажей, а не 25</h1>
+          <div class="btn">Совсем другое дело!</div>
+        </div>
+
+        <div class="slide slide-2">
+          <div class="photo-gradient"></div>
+          <img class="photo" src="Зима_рендер.webp" alt="" />
+        </div>
+
+        <div class="slide slide-3">
+          <img class="logo logo--final" src="logo.svg" alt="" />
+          <div class="secondLogo-wrapper">
+            <img class="secondLogo" src="secondLogo.svg" alt="" />
+          </div>
+          <p class="disclaimer">
+            Застройщик ООО «СЗ «Альянс Инвест». Проектная <br />декларация на
+            сайте: наш.дом.рф. сайт: zhkriviera.ru.
+          </p>
+        </div>
+      </section>
+    </a>
+    <script>
+      document.getElementById("click_area").href =
+        yandexHTML5BannerApi.getClickURLNum(1);
+    </script>
+    <script src="gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
